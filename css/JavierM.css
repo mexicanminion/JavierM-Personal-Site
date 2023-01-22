@@ -21,6 +21,9 @@ h1{
     font-weight: bold;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2{
@@ -56,8 +59,15 @@ h2{
     margin: 0px;
 }
 
+.test{
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+}
+
 .footer{
     background-color: #2d2a2a;
+    padding: 10px;
     margin: 0px;
 }
 
@@ -71,7 +81,6 @@ h2{
 
 .main{
     margin: auto;
-    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     border: 3px solid #FFFFFF;
@@ -80,11 +89,22 @@ h2{
     height: max-content;
     width: inherit;
     max-width: 800px;
-    min-width: 300px;    
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
 }
 
 .navbar{
     margin: 0 0 5px;
+    display: flex;
+    justify-content: center;
     border-bottom: 1px solid white;
 }
 
@@ -92,6 +112,7 @@ h2{
     color: #FFFFFF;
     font-size: 15px;
     font-weight: bold;
+    display: inline-block;
     margin: 2px;
     padding: 15px;
 }
@@ -107,11 +128,27 @@ h2{
     color: #FFFFFF;
 }
 
-ul.links{
+.links{
     margin: 0;
     list-style-type: none;
+    padding: 0;
     padding-top: 10px;
     text-align: center;
+}
+.links a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 2px;
+    padding: 15px;
+}
+
+.links a:hover{
+    background: #ffffff74;
+    color: #000000;
+    cursor: pointer;
 }
 
 ul.item{

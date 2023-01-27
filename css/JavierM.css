@@ -1,5 +1,6 @@
 html{
     height: 100%;
+    scroll-behavior: smooth;
     background: rgb(35,255,131);
     background: linear-gradient(90deg, rgba(35,255,131,1) 0%, rgba(7,198,35,1) 100%);
 }
@@ -152,6 +153,7 @@ section{
 
 .navbar{
     margin: 0 0 5px;
+    padding: 3px;
     display: flex;
     justify-content: center;
     column-gap: 10px;
@@ -160,7 +162,7 @@ section{
 
 .item{
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     display: inline-block;
     padding: 15px;

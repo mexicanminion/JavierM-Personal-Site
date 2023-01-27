@@ -63,6 +63,13 @@ h2{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.aboutMe img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+}
 
 .items-center {
     align-items: center;

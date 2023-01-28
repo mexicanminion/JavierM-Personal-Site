@@ -71,7 +71,7 @@ h2{
     width: 200px;
     height: 200px;
     margin: 0px;
-    padding: 0px;
+    padding: 3px;
 }
 
 .items-center {
@@ -224,7 +224,6 @@ li{
 }
 
 .flex-aboutMe{
-    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
@@ -282,4 +281,12 @@ ul{
 
 .justify-center{
     justify-content: center;
+}
+
+.justify-left{
+    justify-content: left;
+}
+
+.align-center{
+    align-items: center;
 }

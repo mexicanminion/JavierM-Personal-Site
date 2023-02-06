@@ -290,3 +290,11 @@ ul{
 .align-center{
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .flex-aboutMe{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+    

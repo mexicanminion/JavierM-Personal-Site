@@ -225,7 +225,8 @@ li{
 
 .flex-aboutMe{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 ul{
@@ -291,10 +292,20 @@ ul{
     align-items: center;
 }
 
+.aboutMeTextGrid{
+    align-self: start;
+    grid-column: 2/4;
+}
+
 @media screen and (max-width: 768px) {
     .flex-aboutMe{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 0px;
+    }
+
+    .aboutMeTextGrid{
+        grid-column: 1/4;
     }
 }
     

@@ -1,20 +1,14 @@
 html{
     height: 100%;
     scroll-behavior: smooth;
-    background: rgb(31, 218, 112);
-    background: linear-gradient(90deg, rgba(31, 218, 112,1) 0%, rgba(7,198,35,1) 100%);
-}
-
-::backdrop{
-    background: rgb(35,255,131);
-    background: linear-gradient(90deg, rgba(35,255,131,1) 0%, rgba(7,198,35,1) 100%);
+    background: #2db451;
 }
 
 body{
     text-align: center;
     display: block;
     color: #FFFFFF;
-    font-family: "Arial";
+    font-family: "Maven Pro";
     font-size: 12px;
     margin: 0px;
     padding: 0px;
@@ -55,14 +49,12 @@ h2{
 }
 
 .intro{
-    /*padding-bottom: 100px;*/
     height: 100vh;
 }
 
 .about{
-    background-color: #000000;
     padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-top: 10rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -89,13 +81,6 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    /*z-index: 100;*/
-}
-
-.backdrop-blur, .backdrop-blur-sm {
-    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-    --tw-backdrop-blur: blur(8px);
 }
 
 .bg-neutral{
@@ -116,7 +101,6 @@ section{
 }
 
 .footer{
-    background-color: #2d2a2a;
     padding: 10px;
     margin: 0px;
 }
@@ -143,14 +127,14 @@ section{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    align-items: center;    
+    align-items: center;
 }
 
 .pages{
     display: flex;
     justify-content: center;
     flex-direction: column;   
-    /*row-gap: 20px;*/
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, #6c6061 60%);;
 }
 
 .navbar{
@@ -164,43 +148,24 @@ section{
 
 .item{
     color: #FFFFFF;
+    background: none;
     font-size: 18px;
     font-weight: bold;
     display: inline-block;
     padding: 15px;
+    border-radius: 10px;
+    transition: background;
+    transition-duration: .7s;
+    text-decoration: none;
 }
 
 .item:hover{
     background: #ffffff74;
-    color: #000000;
     cursor: pointer;
 }
 
 .item a{
-    text-decoration: underline;
     color: #FFFFFF;
-}
-
-.links{
-    margin: 0;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-.links a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: bold;
-    display: inline-block;
-    margin: 2px;
-    padding: 15px;
-}
-
-.links a:hover{
-    background: #ffffff74;
-    color: #000000;
-    cursor: pointer;
 }
 
 ul.item{
@@ -297,6 +262,10 @@ ul{
     grid-column: 2/4;
 }
 
+.blur{
+    backdrop-filter: blur(2px);
+}
+
 @media screen and (max-width: 768px) {
     .flex-aboutMe{
         display: grid;
@@ -308,4 +277,5 @@ ul{
         grid-column: 1/4;
     }
 }
+
     

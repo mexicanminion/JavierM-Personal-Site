@@ -52,8 +52,8 @@ h2{
     height: 100vh;
 }
 
-.about{
-    padding-bottom: 4rem;
+.section-spacing{
+    padding-bottom: 10rem;
     padding-top: 10rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -128,13 +128,26 @@ section{
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
+    animation: fadeIn 2s;
 }
 
-.pages{
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.page-1{
     display: flex;
     justify-content: center;
     flex-direction: column;   
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, #6c6061 60%);;
+}
+
+.page-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    background: #6c6061;
 }
 
 .navbar{
@@ -144,6 +157,7 @@ section{
     justify-content: center;
     column-gap: 10px;
     border-bottom: 1px solid white;
+    animation: fadeIn 4s;
 }
 
 .item{

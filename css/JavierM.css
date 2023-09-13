@@ -53,8 +53,8 @@ h2{
 }
 
 .section-spacing{
-    padding-bottom: 10rem;
-    padding-top: 10rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -131,11 +131,6 @@ section{
     animation: fadeIn 2s;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 .page-1{
     display: flex;
     justify-content: center;
@@ -205,6 +200,12 @@ li{
 
 .flex-aboutMe{
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.flex-projects{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
@@ -227,6 +228,10 @@ ul{
 
 .gap-y-6{
     row-gap: 1rem;
+}
+
+.gap-y-3{
+    row-gap: 0.6rem;
 }
 
 .gap-x-2 {
@@ -274,7 +279,7 @@ ul{
 
 .aboutMeTextGrid{
     align-self: start;
-    grid-column: 2/4;
+    grid-column: 2/5;
 }
 
 .blur{
@@ -291,6 +296,11 @@ ul{
     .aboutMeTextGrid{
         grid-column: 1/4;
     }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
     

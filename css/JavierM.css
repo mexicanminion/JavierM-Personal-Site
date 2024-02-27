@@ -170,6 +170,8 @@ section{
 .item:hover{
     background: #ffffff74;
     cursor: pointer;
+    transform: scale(1.05); 
+
 }
 
 .item a{

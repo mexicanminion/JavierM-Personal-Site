@@ -97,6 +97,8 @@ section{
     margin: 10%;
     display: flex;
     justify-content: center;
+    row-gap: 20px;
+    flex-direction: column;
 }
 
 .footer{
@@ -135,7 +137,7 @@ section{
     justify-content: center;
     flex-direction: column;   
     background: #2db451;
-    background: linear-gradient(180deg, #2db451 40%, #544d4e 60%);;
+    
 }
 
 .page-2{
